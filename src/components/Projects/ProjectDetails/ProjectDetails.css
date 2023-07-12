@@ -1,0 +1,152 @@
+.project-details-wrapper {
+    padding-top: 150px;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.project-details-title {
+    padding: 3.4rem 0;
+    color: white;
+    font-size: clamp(2.5rem, 6.5vw, 3rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+.pd-grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.pd-first-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+@media (max-width: 992px) {
+    .pd-first-row {
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pd-first-row {
+        justify-content: center;
+    }
+}
+
+.pd-second-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .pd-second-row {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 768px) {
+    .pd-second-row {
+        justify-content: center;
+    }
+}
+
+.pd-image-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pd-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .pd-text-col {
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .pd-text-col {
+        padding-top: 6rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+    .pd-text-col {
+        flex: 0 0 auto !important;
+        width: 85% !important;
+    }
+}
+
+.pd-text-col > p {
+    font-size: clamp(1rem, 4.5vw, 1.2rem);
+}
+
+.project-details-subtitle {
+    color: white;
+    font-size: clamp(2rem, 6.5vw, 2.5rem);
+    font-weight: bold;
+    text-align: left;
+    padding-left: 0.75rem;
+}
+
+.project-details-image {
+    height: auto;
+    max-width: 38rem;
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .project-details-image {
+        max-width: 34rem;
+    }
+}
+
+@media (min-width: 930px) and (max-width: 991px) {
+    .project-details-image {
+        max-width: 45rem;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 645px) {
+    .project-details-image {
+        max-width: 32rem;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 550px) {
+    .project-details-image {
+        max-width: 25rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .project-details-image {
+        max-width: 22rem;
+    }
+}
+
+.pd-button {
+    border-color: white;
+    width: 10rem;
+    background-color: white;
+    color: #50048f;
+}
+
+.pd-button:hover {
+    border-color: #50048f;
+    color: white;
+    background-color: #50048f;
+}
