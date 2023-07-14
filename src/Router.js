@@ -15,7 +15,7 @@ import Contact from './components/Contact/Contact';
 
 
 
-function App() {
+function MainRoutes() {
 
 
 
@@ -36,5 +36,5 @@ function App() {
   );
 }
 
-export default App;
+export default MainRoutes;
 
