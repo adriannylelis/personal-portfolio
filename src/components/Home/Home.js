@@ -1,14 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import SocialsWrapper from "../SocialsWrapper";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-
+import avatarImage from "../../assets/home-intro-img.jpeg";
 import "./Home.css";
 
 function Home() {
     const programmerImage = "https://i.ibb.co/xgMTWR0/home-img.png";
-    const avatarImage = "https://i.ibb.co/nL3VccP/avatar.png";
 
     return (
         <>
@@ -52,7 +48,7 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
-            <SocialsWrapper/>
+            <SocialsWrapper />
         </>
 
     );
