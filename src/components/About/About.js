@@ -1,10 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import SocialsWrapper from "../SocialsWrapper";
 
 import "./About.css";
 
@@ -36,36 +33,12 @@ function Home() {
                 <p>Algumas habilidades:</p>
                 <Techstack />
                 <div className="toolstack-wrapper">
-                <p>Ferramentas que utilizo:</p>
-                <Toolstack />
+                    <p>Ferramentas que utilizo:</p>
+                    <Toolstack />
                 </div>
             </Container>
-            
-            <div fluid className="socials-wrapper">
-                <h1>adrianny.<span className="introduce-span">find()</span></h1>
-                <Col className="col-xl-4 col-lg-6 col-md-6 col-sm-4 introduce-column">
-                    <p className="text-center">Conecte-se e saiba um pouco mais sobre o meu trabalho.</p>
-                </Col>
-                <ul className="socials-list">
-                    <a href="mailto:adri@adriannylelis.co">
-                        <li className="socials-item">
-                            <FontAwesomeIcon className="socials-icon" icon={faEnvelope} />
-                        </li>
-                    </a>
-                    <a a target="_blank"
-                        href="https://github.com/adriannylelis">
-                        <li className="socials-item">
-                            <FontAwesomeIcon className="socials-icon" icon={faGithub} />
-                        </li>
-                    </a>
-                    <a a target="_blank"
-                        href="https://linkedin.com/in/adriannylelis">
-                        <li className="socials-item">
-                            <FontAwesomeIcon className="socials-icon" icon={faLinkedin} />
-                        </li>
-                    </a>
-                </ul>
-            </div>
+
+            <SocialsWrapper />
         </>
 
     );
