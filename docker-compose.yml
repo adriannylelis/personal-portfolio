@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  personal-portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Mapeia a porta do contêiner para o host
+    volumes:
+      - ./src:/app/src              # Reflete alterações na pasta src
+      - ./public:/app/public        # Atualiza alterações na pasta public
+      - ./package.json:/app/package.json
+      - /app/node_modules           # Monta node_modules no contêiner
+    stdin_open: true
+    tty: true

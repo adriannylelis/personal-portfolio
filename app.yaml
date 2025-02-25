@@ -1,3 +1,15 @@
-  runtime: nodejs16
-  resources:
-    memory_gb: 2
+runtime: custom
+env: flex
+service: default
+
+resources:
+  memory_gb: 2
+  cpu: 1
+  disk_size_gb: 10
+
+env_variables:
+  NODE_ENV: "production"
+
+network:
+  forwarded_ports:
+    - 3000
