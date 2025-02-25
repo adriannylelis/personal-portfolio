@@ -76,7 +76,7 @@ p {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 .avatar-image{
     height: auto;

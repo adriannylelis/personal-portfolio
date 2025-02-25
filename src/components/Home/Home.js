@@ -1,10 +1,9 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import avatarImage from "../../assets/avatar-ptfl-2.png";
 import SocialsWrapper from "../SocialsWrapper";
-import avatarImage from "../../assets/home-intro-img.jpeg";
 import "./Home.css";
 
 function Home() {
-    const programmerImage = "https://i.ibb.co/xgMTWR0/home-img.png";
 
     return (
         <>
@@ -25,8 +24,8 @@ function Home() {
 
                         </div>
                     </Col>
-                    <Col className="img-col col-sm-12 col-md-6 d-flex justify-content-center">
-                        <img className="programmer-image img-fluid" src={programmerImage} alt="programmer"></img>
+                    <Col className="img-col col-sm-10 col-md-6 d-flex justify-content-center">
+                        <img className="programmer-image img-fluid" src={avatarImage} alt="programmer"></img>
                     </Col>
                 </Row>
             </Container>
@@ -34,17 +33,12 @@ function Home() {
                 <h1 text-sm-32>adrianny.<span className="introduce-span">introduce()</span></h1>
                 <Row className="description-container">
                     <Col className="col-xl-6 col-lg-6 col-md-6 col-sm-10 description-column">
-                        <p>Sou uma entusiasta em tecnologia, com habilidades tanto no Frontend quanto no backend. Além disso, sou fascinada por design e, de vez em quando, adoro explorar conceitos e criar experiências visuais cativantes.</p>
-                        <br></br>
-                        <br></br>
-
-                        <p> Estou sempre buscando oportunidades para expandir meus conhecimentos e mergulhar em novas tecnologias. O aprendizado contínuo é essencial para mim, pois acredito que é a chave para o crescimento pessoal e profissional. </p>
+                        <p>Sou uma desenvolvedora apaixonada por tecnologia, com experiência tanto no Frontend quanto no Backend. Além de codificar, também me interesso por design e adoro transformar ideias em experiências visuais envolventes.</p>
                         <br></br>
 
+                        <p> Curiosa por natureza, estou sempre explorando novas tecnologias e aprimorando minhas habilidades. Para mim, o aprendizado contínuo não é apenas um objetivo, mas uma filosofia — a chave para evoluir e criar soluções cada vez mais inovadoras. </p>
+                        <br></br>
 
-                    </Col>
-                    <Col className="col-xl-6 col-sm-6 avatar-column">
-                        <img className="avatar-image" src={avatarImage} alt="avatar"></img>
                     </Col>
                 </Row>
             </Container>

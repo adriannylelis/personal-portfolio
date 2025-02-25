@@ -1,5 +1,5 @@
 .home-wrapper {
-    margin-top: 13rem;
+    margin-top: 8rem;
 }
 
 .left-col {
@@ -31,10 +31,10 @@ p {
     color: #d5ace4;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 475px) {
     .img-col {
         flex: 0 0 auto;
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -95,7 +95,7 @@ p {
 
 }
 
-@media (min-width: 0px) and (max-width: 575px) {
+@media (min-width: 0px) and (max-width: 500px) {
     .description-column {
         flex: 0 0 auto !important;
         width: 100% !important;

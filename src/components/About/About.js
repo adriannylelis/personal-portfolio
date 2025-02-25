@@ -1,47 +1,47 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import SocialsWrapper from "../SocialsWrapper";
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
-import SocialsWrapper from "../SocialsWrapper";
 
 import "./About.css";
 
-function Home() {
+function About() {
     const aboutImage = "https://i.ibb.co/4RvvV3N/about.png";
 
     return (
         <>
             <Container fluid className="introduce-wrapper">
-                <h1 text-sm-32>adrianny.<span className="introduce-span">about()</span></h1>
+                <h1>adrianny.<span className="introduce-span">about()</span></h1>
                 <Row className="description-container">
-                    <Col className="col-xl-6 col-lg-6 col-md-6 col-sm-10 description-column">
-                        <p> Sou formada em Gestão de TI e por um bom tempo trabalhei com infraestrutura e fui a "Carinha do TI". Minha paixão por desenvolvimento inicou quando comecei a lecionar a disciplina de "Pensamento Computacional” em uma Instituição de Ensino.</p>
-                        <br></br>
-                        <br></br>
-
-                        <p> Meus campos de interesse são construir novas Tecnologias e Produtos Web. Sempre que possível também aplico minha paixão por designer e adoro brincar com ferramentas ADOBE. </p>
-                        <br></br>
-
-
+                    <Col lg={6} md={12} className="description-column">
+                        <p>
+                            Sou formada em Gestão de TI e, por um bom tempo, atuei com infraestrutura, sendo conhecida como a "Carinha do TI".
+                            Minha paixão pelo desenvolvimento surgiu ao lecionar a disciplina de "Pensamento Computacional" em uma instituição de ensino.
+                        </p>
+                        <p>
+                            Tenho interesse especial na construção de novas tecnologias e produtos web. Sempre que possível, exploro minha criatividade
+                            no design, brincando com ferramentas da Adobe para criar experiências visuais cativantes.
+                        </p>
                     </Col>
-                    <Col className="col-xl-6 col-sm-6 avatar-column">
-                        <img className="avatar-image" src={aboutImage} alt="avatar"></img>
+                    <Col lg={6} md={12} className="avatar-column">
+                        <img className="avatar-image" src={aboutImage} alt="avatar" />
                     </Col>
                 </Row>
             </Container>
+
             <Container fluid className="techstack-wrapper">
-                <h1 text-sm-32>adrianny.<span className="introduce-span">techstack()</span></h1>
-                <p>Algumas habilidades:</p>
+                <h1>adrianny.<span className="introduce-span">techstack()</span></h1>
+                <p>Principais tecnologias com as quais trabalho:</p>
                 <Techstack />
                 <div className="toolstack-wrapper">
-                    <p>Ferramentas que utilizo:</p>
+                    <p>Ferramentas que utilizo no dia a dia:</p>
                     <Toolstack />
                 </div>
             </Container>
 
             <SocialsWrapper />
         </>
-
     );
 }
 
-export default Home;
+export default About;

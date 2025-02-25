@@ -1,13 +1,14 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Footer.css';
 
 function Footer() {
     const brand = "{AL}";
+    const brandFull = "{Adrianny Lelis}";
 
     return (
         <footer>
@@ -34,8 +35,8 @@ function Footer() {
                             </li>
                         </ul>
                     </Col>
-                    <Col className="footer-col footer-col-white col-md-4">{brand}</Col>
-                    <Col className="footer-col footer-col-gray col-md-4">©2023 {brand}</Col>
+                    <Col className="footer-col footer-col-white col-md-4">{brandFull}</Col>
+                    <Col className="footer-col footer-col-gray col-md-4">©2025 {brand}</Col>
                 </Row>
             </Container>
         </footer>
