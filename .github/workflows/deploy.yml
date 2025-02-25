@@ -21,8 +21,8 @@ jobs:
 
       - name: Configurar projeto no Google Cloud
         run: |
-          gcloud config set project portfolio-pessoal-452016  # Substitua com o ID do seu projeto
+          gcloud config set project portfoliopessoal-452018  
 
       - name: Fazer deploy no Google Cloud
         run: |
-          gcloud app deploy --quiet
+          gcloud app deploy app.yaml --quiet
