@@ -1,17 +1,11 @@
-runtime: custom
-env: flex
-service: default
+runtime: nodejs16  
+env: standard  
 
-resources:
-  memory_gb: 2
-  cpu: 1
-  disk_size_gb: 10
-
-env_variables:
-  NODE_ENV: "production"
-
-network:
-  forwarded_ports:
-    - 3000
-    
-entrypoint: npm start 
+handlers:
+  - url: /static
+    static_dir: build/static
+  - url: /favicon.ico
+    static_files: build/favicon.ico
+    upload: build/favicon.ico
+  - url: /.* 
+    script: auto
