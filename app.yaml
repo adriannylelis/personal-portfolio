@@ -13,3 +13,5 @@ env_variables:
 network:
   forwarded_ports:
     - 3000
+    
+entrypoint: npm start 
