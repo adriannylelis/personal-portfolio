@@ -1,11 +1,11 @@
-runtime: nodejs18 
+runtime: nodejs18
 env: standard  
 
 handlers:
-  - url: /static
-    static_dir: build/static
-  - url: /favicon.ico
-    static_files: build/favicon.ico
-    upload: build/favicon.ico
-  - url: /.* 
-    script: auto
+  - url: /(.*\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|otf|eot|ttf|map))$
+    static_files: build/\1
+    upload: build/.*\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|otf|eot|ttf|map)$
+
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html
