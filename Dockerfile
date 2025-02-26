@@ -1,5 +1,5 @@
 # Defina a imagem base
-FROM node:16-alpine
+FROM node:18-alpine
 
 # Cria o diretório de trabalho no contêiner
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 ENV NODE_ENV=production
 
 # Expõe a porta que a aplicação vai rodar
-EXPOSE 3000
+EXPOSE 8080
 
 # Compila a aplicação React
 RUN npm run build

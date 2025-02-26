@@ -23,6 +23,24 @@ jobs:
         run: |
           gcloud config set project portfoliopessoal-452018  
 
+      - name: Excluir node_modules e cache
+        run: |
+          rm -rf node_modules
+          rm -rf ~/.npm
+          rm -rf ~/.cache
+
+      - name: Instalar dependências
+        run: |
+          npm install 
+
+      - name: Compilar a aplicação
+        run: |
+          npm run build
+
       - name: Fazer deploy no Google Cloud
         run: |
-          gcloud app deploy app.yaml --quiet
+          gcloud app deploy app.yaml --quiet --verbosity debug
+
+      - name: Verificar a aplicação no GCP
+        run: |
+          gcloud app browse
