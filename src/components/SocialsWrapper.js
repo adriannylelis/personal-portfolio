@@ -1,8 +1,8 @@
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
 const SocialsWrapper = () => {
@@ -18,12 +18,12 @@ const SocialsWrapper = () => {
                         <FontAwesomeIcon className="socials-icon" icon={faEnvelope} />
                     </li>
                 </a>
-                <a href="https://github.com/adriannylelis" target="_blank">
+                <a href="https://github.com/adriannylelis" target="_blank" rel="noreferrer">
                     <li className="socials-item">
                         <FontAwesomeIcon className="socials-icon" icon={faGithub} />
                     </li>
                 </a>
-                <a href="https://linkedin.com/in/adriannylelis" target="_blank">
+                <a href="https://linkedin.com/in/adriannylelis" target="_blank" rel="noreferrer">
                     <li className="socials-item">
                         <FontAwesomeIcon className="socials-icon" icon={faLinkedin} />
                     </li>

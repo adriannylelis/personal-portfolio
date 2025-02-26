@@ -22,13 +22,13 @@ function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank"
+                                <a target="_blank" rel="noreferrer"
                                 href="https://github.com/adriannylelis">
                                     <FontAwesomeIcon className="socials-icon" icon={faGithub} />
                                 </a>
                             </li>
                             <li>
-                                <a a target="_blank" 
+                                <a a target="_blank" rel="noreferrer"
                                 href="https://linkedin.com/in/adriannylelis">
                                     <FontAwesomeIcon className="socials-icon" icon={faLinkedin} />
                                 </a>
