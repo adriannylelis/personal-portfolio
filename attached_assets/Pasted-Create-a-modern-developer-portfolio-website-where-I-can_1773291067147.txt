@@ -1,0 +1,69 @@
+Create a modern developer portfolio website where I can showcase:
+1. Production projects that I have worked on
+2. Selected GitHub repositories
+3. My technical background and skills
+The website should have a clean, professional, developer-focused design similar to modern tech portfolios.
+The website must support two languages:
+* English (EN)
+* Brazilian Portuguese (PT-BR)
+Users must be able to switch languages from the interface.
+The website must also include theme switching with:
+* Light mode
+* Dark mode
+Theme preference should persist using local storage or system preference.
+
+Main sections required
+Home
+* Short introduction about me
+* Title: Full Stack Software Engineer (Backend-focused)
+* Short professional summary
+* Links to GitHub and LinkedIn
+* Call-to-action buttons (View Projects / Contact)
+About
+* Section explaining my background as a software engineer
+* Mention experience building scalable APIs, distributed systems, and AI-powered applications
+* Highlight experience with Node.js, Python, cloud systems, and LLM integrations
+Projects
+Two categories:
+Production Projects
+* Cards displaying real-world systems or platforms I worked on
+* Each project should include:
+    * Title
+    * Short description
+    * Technologies used
+    * Architecture highlights
+    * Optional link or screenshots
+GitHub Projects
+* Automatically fetch repositories from the GitHub API
+* Allow me to manually highlight or pin specific repositories
+* Show:
+    * repository name
+    * description
+    * language
+    * stars
+    * link to repository
+Tech Stack
+* Visual section showing technologies I work with:
+Node.js TypeScript NestJS React Python FastAPI PostgreSQL Redis Docker AWS Google Cloud Kafka LangChain AI / LLM Systems
+Contact
+* Email
+* LinkedIn
+* GitHub
+
+Technical Requirements
+* Use Next.js or React
+* Use TailwindCSS for styling
+* Fully responsive design (mobile, tablet, desktop)
+* SEO-friendly structure
+* Clean and modern developer aesthetic
+* Fast loading performance
+
+Extra Features
+* GitHub API integration to fetch repositories
+* Language toggle (EN / PT-BR)
+* Dark / Light theme toggle
+* Smooth scrolling navigation
+* Animated tech stack icons
+* Project filtering by technology
+* Clean card-based layout for projects
+* Minimal and elegant design similar to portfolios of senior engineers working in startups or AI companies

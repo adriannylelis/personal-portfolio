@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "Smooth page transitions, scroll animations, and interactive component states"
+  "zustand": "Lightweight global state management for language and theme toggles"
+  "react-icons": "Comprehensive icon library for tech stack logos (SiPython, SiNodedotjs, etc.)"
+
+images:
+  - path: "artifacts/portfolio/public/images/hero-bg.png"
+    description: "Dark abstract geometric technical background with subtle glowing cyan grid lines, deep navy slate atmosphere, digital matrix feel, terminal aesthetic"
+    aspect_ratio: "16:9"
+  - path: "artifacts/portfolio/public/images/avatar.png"
+    description: "Minimalist stylized line-art illustration of a software engineer, dark background with glowing cyan accents, professional and modern"
+    aspect_ratio: "1:1"
+
+notes:
+  - Single page application using anchor links for navigation
+  - Fetching GitHub repositories from public unauthenticated API
+  - Language and theme state persisted in localStorage via Zustand

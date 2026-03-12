@@ -1,0 +1,39 @@
+Adrianny Lelis da Silva
+Backend Software Engineer | AI Systems & LLM Integrations
+Brazil | adrianny.lelis@gmail.com | LinkedIn: https://www.linkedin.com/in/adriannylelis/ 
+Professional Summary
+Backend Software Engineer specializing in scalable APIs, distributed systems, and AI-powered applications. Experienced in designing backend services that integrate LLMs, RAG pipelines, and automation workflows. Skilled in Node.js, Python, and cloud-native architectures, with hands-on experience deploying containerized services and building production systems that combine traditional backend engineering with AI inference pipelines. Focused on reliability, observability, and building AI-enabled products that operate at scale. 
+
+Technical Skills
+Languages & Frameworks: Node.js, JavaScript, TypeScript, NestJS, Python, Flask, FastAPI, React, Next.js
+Architecture & Integration: Microservices, Distributed Systems, Event-driven architectures, REST/SOAP APIs
+Databases: PostgreSQL, MySQL, MongoDB, MSSQL, Redis
+Messaging & Events: AWS SQS, Redis, Kafka
+Cloud & DevOps: AWS (Lambda, S3, SQS), GCP (Cloud Run, Pub/Sub, App Engine), Docker, CI/CD, Git
+Observability & Quality: Grafana, Logs, Jest, Pytest, Metrics, Unit and Integration Tests, TDD
+AI Systems & LLM Engineering: LLM orchestration, LangChain, RAG pipelines, LangChain, NLP, Scikit-learn, Pandas, Scikit-Learn, Pytorch, AI inference workflows
+
+Professional Experience
+Web Development Specialist | Mato Grosso Communication Network (January 2024 – Present)
+Led the architecture and development of REST and SOAP APIs supporting high-traffic digital media platforms.
+Containerization of backend applications with Docker and deployment workflow across environments, ensuring consistency between development and production environments.
+Designed and implemented a Python-based backend service orchestrating LLM-driven content generation pipelines integrating TTS services and conversational workflows.
+Implemented LLM-powered conversational pipelines for automated content refinement, enabling AI-assisted editorial workflows prior to media publication.
+Continuous collaboration with product, design, and infrastructure teams to deliver scalable solutions, aligning technical and business requirements.
+Implemented observability practices using Grafana and Prometheus to improve incident diagnosis and system reliability.
+Head of Digital & Project Manager | Rise Marketing (July 2023 – January 2024)
+Digital project management using Scrum and Kanban, coordinating multidisciplinary teams.
+Technical and strategic planning of digital solutions focused on performance and conversion.
+Implementing automation and low-code solutions, increasing operational efficiency and reducing rework.
+Systems Analyst Developer | GGF Agriculture (May 2022 – May 2023)
+Development and maintenance of ERP systems (Protheus).
+Creation of complex SQL queries, procedures, and integrations via web services.
+Optimization of internal processes and support for business areas with robust technical solutions.
+
+Education 
+Postgraduate Degree in Machine Learning Engineering - FIAP (Expected Completion: 2026).
+Full Stack Software Development - Cubos Academy (2022)
+Bachelor's Degree in Information Technology Management - La Salle University Center (2017)
+
+Languages
+Portuguese (Native) | English (Advanced)
