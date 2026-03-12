@@ -25,7 +25,7 @@ export function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           
           {/* Text Content */}
           <div className="lg:col-span-8 order-2 lg:order-1">
@@ -34,16 +34,16 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="font-mono text-primary font-medium tracking-wide mb-4 block">
+              <span className="font-mono text-primary font-medium tracking-wide mb-2 block">
                 {`> ${t.greeting}`}
               </span>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-foreground leading-tight mb-4">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-foreground leading-tight mb-2">
                 Adrianny Lelis.
               </h1>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-muted-foreground mb-6 text-gradient">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-muted-foreground mb-4 text-gradient">
                 {t.title}
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed">
+              <p className="text-base text-muted-foreground max-w-2xl mb-6 leading-relaxed">
                 {t.description}
               </p>
 
