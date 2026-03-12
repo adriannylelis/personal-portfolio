@@ -62,7 +62,7 @@ export function TechStack() {
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading title={t.title} subtitle="tech_stack.json" alignment="center" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
           {stackCategories.map((category, catIdx) => (
             <motion.div 
               key={catIdx}
@@ -70,29 +70,23 @@ export function TechStack() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: catIdx * 0.1 }}
-              className="glass-card p-8 rounded-2xl"
+              className="glass-card p-4 rounded-xl"
             >
-              <h3 className="text-xl font-mono font-bold text-foreground mb-8 border-b border-border/50 pb-4 inline-block">
+              <h3 className="text-sm font-mono font-bold text-foreground mb-3 border-b border-border/50 pb-2">
                 {category.title}
               </h3>
               
-              <div className="grid grid-cols-3 sm:grid-cols-3 gap-6">
+              <div className="grid grid-cols-4 sm:grid-cols-4 gap-3">
                 {category.items.map((tech, i) => (
                   <motion.div
                     key={i}
-                    whileHover={{ y: -5, scale: 1.05 }}
-                    className="flex flex-col items-center justify-center gap-3 group cursor-default"
+                    whileHover={{ y: -3, scale: 1.05 }}
+                    className="flex flex-col items-center justify-center gap-1.5 group cursor-default"
                   >
-                    <div 
-                      className="w-16 h-16 rounded-xl bg-background border border-border/50 flex items-center justify-center text-3xl text-muted-foreground group-hover:text-primary transition-all duration-300 shadow-sm"
-                      style={{ 
-                        // Note: Using inline style for dynamic hover color can be tricky, 
-                        // so we just use the theme's primary color on hover via tailwind
-                      }}
-                    >
-                      <tech.Icon className="transition-all duration-300 filter grayscale group-hover:grayscale-0 group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]" style={{ color: tech.color }} />
+                    <div className="w-10 h-10 rounded-lg bg-background border border-border/50 flex items-center justify-center text-xl text-muted-foreground group-hover:text-primary transition-all duration-300 shadow-sm">
+                      <tech.Icon className="transition-all duration-300 filter grayscale group-hover:grayscale-0" style={{ color: tech.color }} />
                     </div>
-                    <span className="text-xs font-mono font-medium text-muted-foreground group-hover:text-foreground transition-colors text-center">
+                    <span className="text-[10px] font-mono font-medium text-muted-foreground group-hover:text-foreground transition-colors text-center leading-tight">
                       {tech.name}
                     </span>
                   </motion.div>
