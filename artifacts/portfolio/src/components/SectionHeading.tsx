@@ -8,7 +8,7 @@ interface SectionHeadingProps {
 
 export function SectionHeading({ title, subtitle, alignment = "left" }: SectionHeadingProps) {
   return (
-    <div className={`mb-12 ${alignment === "center" ? "text-center" : "text-left"}`}>
+    <div className={`mb-6 ${alignment === "center" ? "text-center" : "text-left"}`}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ export function SectionHeading({ title, subtitle, alignment = "left" }: SectionH
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
           {title}
         </h2>
-        <div className={`h-1 w-20 bg-primary mt-6 ${alignment === "center" ? "mx-auto" : ""}`}></div>
+        <div className={`h-1 w-16 bg-primary mt-3 ${alignment === "center" ? "mx-auto" : ""}`}></div>
       </motion.div>
     </div>
   );

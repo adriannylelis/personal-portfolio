@@ -15,11 +15,11 @@ export function Projects() {
   const { data: repos, isLoading, isError } = useGithubRepos("adriannylelis");
 
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-14">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading title={t.title} subtitle="ls -la projects/" />
 
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-6">
           <div className="inline-flex bg-secondary/50 p-1 rounded-lg border border-border/50">
             <button
               onClick={() => setActiveTab("production")}
@@ -56,19 +56,19 @@ export function Projects() {
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               >
                 {t.prodProjects.map((project, idx) => (
-                  <div key={idx} className="glass-card flex flex-col p-6 rounded-xl group hover:border-primary/50 transition-colors duration-300">
-                    <div className="flex justify-between items-start mb-4">
-                      <div className="p-3 bg-secondary/80 text-primary rounded-lg group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                        <FolderGit2 className="w-6 h-6" />
+                  <div key={idx} className="glass-card flex flex-col p-4 rounded-xl group hover:border-primary/50 transition-colors duration-300">
+                    <div className="flex justify-between items-start mb-3">
+                      <div className="p-2 bg-secondary/80 text-primary rounded-lg group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                        <FolderGit2 className="w-5 h-5" />
                       </div>
-                      <span className="text-xs font-mono font-semibold px-2 py-1 rounded-full border border-primary/30 text-primary bg-primary/5">
+                      <span className="text-xs font-mono font-semibold px-2 py-0.5 rounded-full border border-primary/30 text-primary bg-primary/5">
                         {project.type}
                       </span>
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="text-base font-bold text-foreground mb-1.5 group-hover:text-primary transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm flex-grow mb-6">
+                    <p className="text-muted-foreground text-sm flex-grow mb-3">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap gap-2 mt-auto">
@@ -120,10 +120,10 @@ export function Projects() {
                         href={repo.html_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="glass-card flex flex-col p-6 rounded-xl group hover:border-accent/50 hover:shadow-[0_0_15px_rgba(6,182,212,0.15)] transition-all duration-300"
+                        className="glass-card flex flex-col p-4 rounded-xl group hover:border-accent/50 hover:shadow-[0_0_15px_rgba(6,182,212,0.15)] transition-all duration-300"
                       >
-                        <div className="flex justify-between items-start mb-4">
-                          <Code2 className="w-6 h-6 text-muted-foreground group-hover:text-accent transition-colors" />
+                        <div className="flex justify-between items-start mb-3">
+                          <Code2 className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors" />
                           <div className="flex items-center gap-3 text-muted-foreground">
                             {repo.language && (
                               <span className="text-xs font-mono flex items-center gap-1">
@@ -137,10 +137,10 @@ export function Projects() {
                             </span>
                           </div>
                         </div>
-                        <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors truncate">
+                        <h3 className="text-base font-bold text-foreground mb-1.5 group-hover:text-accent transition-colors truncate">
                           {repo.name}
                         </h3>
-                        <p className="text-muted-foreground text-sm flex-grow line-clamp-3 mb-4">
+                        <p className="text-muted-foreground text-sm flex-grow line-clamp-3 mb-2">
                           {repo.description || "No description provided."}
                         </p>
                       </a>

@@ -58,7 +58,7 @@ export function TechStack() {
   ];
 
   return (
-    <section id="stack" className="py-24 bg-card/30">
+    <section id="stack" className="py-14 bg-card/30">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading title={t.title} subtitle="tech_stack.json" alignment="center" />
 
